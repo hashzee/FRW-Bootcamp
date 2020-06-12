@@ -22,6 +22,17 @@ const AddTransaction = () => {
         addTransaction(newTransaction);
     }
 
+    const onExpSubmit = e => {
+        e.preventDefault();
+        const newTransaction = {
+            id: new Date().getTime(),
+            text,
+            amount: parseFloat(-amount)
+        }
+        setText('');
+        setAmount('');
+        addTransaction(newTransaction);
+    }
     return (
         <>
             <form>
@@ -55,8 +66,9 @@ const AddTransaction = () => {
                     />         
                 </Box>
 
-                <Box m={4} mt={3} textAlign="center">
-                    <Button className="incomeButton" onClick={onSubmit}>Add Transaction</Button>
+                <Box m={0} mt={3} textAlign="center">
+                    <Button className="incomeButton" onClick={onSubmit}>Add Income</Button>
+                    <Button className="expenseButton" onClick={onExpSubmit}>Add Expense</Button>
                 </Box>
             </form>
         </>

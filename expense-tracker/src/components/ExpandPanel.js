@@ -33,7 +33,7 @@ const ExpandPanel = () => {
 
   return (
     <>
-    <Box m={1}>
+    <Box m={2}>
       <ExpansionPanel>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon className={classes.white} />}
@@ -48,7 +48,7 @@ const ExpandPanel = () => {
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </Box>
-    <Box m={1}>
+    <Box m={2}>
     <ExpansionPanel>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon className={classes.white} />}

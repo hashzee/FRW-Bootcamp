@@ -22,7 +22,7 @@ const Balance = () => {
                 <CountUp
                     start={0}
                     end={total}
-                    duration={2.00}
+                    duration={1.00}
                     separator=","
                     decimals={2}
                     decimal="."

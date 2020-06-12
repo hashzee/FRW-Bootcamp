@@ -14,15 +14,15 @@ const IncomeExp = () => {
     
     return (
         <>
-        <Box m={1}>
+        <Box m={2} mt={1}>
             <div className="inc-exp-container">
                 <Paper className='incBox'>
                     <h4>Income</h4>
-                    <p id="money-plus" className="money plus">
+                    <p id="money-plus" className="money plus" mr={1}>
                         <CountUp
                         start={0}
                         end={income}
-                        duration={2.00}
+                        duration={1.00}
                         separator=","
                         decimals={2}
                         decimal="."
@@ -35,7 +35,7 @@ const IncomeExp = () => {
                         <CountUp
                         start={0}
                         end={expense}
-                        duration={2.00}
+                        duration={1.00}
                         separator=","
                         decimals={2}
                         decimal="."
