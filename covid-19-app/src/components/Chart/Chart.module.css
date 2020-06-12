@@ -1,0 +1,28 @@
+
+
+.container{
+    display: flex;
+    margin-top:20px !important;
+}
+
+.stats{
+    text-align: center;
+    padding: 2px;
+    background-color:rgba(0,0,0,0.6);
+    color: #DDDDDD;
+    letter-spacing: 1.5px;
+    width: 170px !important;
+    border-radius: 10px;
+    margin: 5px !important;
+    margin-left: 20px !important;
+}
+
+.stats p span{
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .stats{
+        width: 100% !important;
+    }
+  }

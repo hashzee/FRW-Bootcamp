@@ -1,0 +1,16 @@
+.tableHead{
+    background-color: #888 !important;
+}
+
+.tableHeadCell{
+    color:white !important; 
+    font-weight: bold;
+}
+
+.danger1 {
+    background-color: moccasin !important;
+}
+
+.newDeaths {
+    background-color:lightcoral !important;
+}

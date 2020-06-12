@@ -1,0 +1,15 @@
+body{
+    background-color: lightsteelblue;
+    background: url(./images/bg.png);
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.container{
+    margin:20px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

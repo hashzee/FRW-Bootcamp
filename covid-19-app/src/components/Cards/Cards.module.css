@@ -1,0 +1,49 @@
+.CardGrid{
+    margin: 10px;
+    border: 1px solid #FEFEFE;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.infected{
+    /* background-color: cornsilk;
+    border-bottom:10px solid goldenrod; */
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 10px solid #555555;  
+    border-radius: 10px;   
+    
+}
+
+.recovered{
+    /* background-color: lightgreen;
+    border-bottom:10px solid green; */
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 10px solid #555555;
+    border-radius: 10px;
+}
+
+.deaths{
+    /* background-color: lightpink;
+    border-bottom:10px solid orangered; */
+    background: #ff4b1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border-bottom: 10px solid #555555;
+    border-radius: 10px;
+}
+
+.activeCases{
+    background: #F09819;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EDDE5D, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 10px solid #555555;
+    border-radius: 10px;
+}
+
+.typography{
+    font-family: 'Comfortaa', cursive !important;
+}
