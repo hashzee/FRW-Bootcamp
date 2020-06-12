@@ -4,7 +4,6 @@ import Balance from './components/Balance';
 import IncomeExp from './components/IncomeExp';
 import ExpandPanel from './components/ExpandPanel';
 import AddTransaction from './components/AddTransaction';
-
 import {GlobalProvider} from './context/GlobalState';
 
 import './App.css';
