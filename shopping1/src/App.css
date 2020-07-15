@@ -1,0 +1,59 @@
+body{
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.logo{
+  width: 20% !important;
+}
+
+.loader{
+  background-color: transparent; 
+  min-width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  animation: loading 0.5s infinite alternate;
+  color:white; 
+}
+
+@keyframes loading {
+  from {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  to {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+}
+

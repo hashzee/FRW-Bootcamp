@@ -63,7 +63,6 @@ export const fetchStats = async () => {
 
     try {
         const data = await axios.get(countryInfoURL);      
-        //console.log(data.data);
         return data.data;
 
     } catch (error) {

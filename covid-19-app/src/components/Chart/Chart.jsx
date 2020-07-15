@@ -14,7 +14,7 @@ const Chart = ({data, country}) => {
         const fetchAPI = async () =>{
             setDailyData(await fetchDailyData());
         }
-
+        
         fetchAPI();
     }, []);
 
