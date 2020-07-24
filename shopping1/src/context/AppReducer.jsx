@@ -1,30 +1,38 @@
 
-export default (state, actions) => {
-    switch(actions.type){
-        case 'DELETE_TRANSACTION':
+export default (state, action) => {
+    switch(action.type){
+        case "ADD_TO_CART":
+            if (!state.cart.find(item => item.id === action.payload.id)) {
+                state.cart.push({
+                    ...action.payload,
+                    qty: 1
+                })
+            } 
+
             return {
                 ...state,
-                transactions: state.transactions.filter(transaction => transaction.id !== actions.payload)
+                cart: [...state.cart]
             }
-        case 'ADD_TO_CART':
+        case "REMOVE_ITEM":
             return {
                 ...state,
-                cart:[actions.payload, ...state.cart]
+                cart: [...state.cart.filter(item => item.id !== action.payload.id)]
             }
-      
-        case 'ADD_EX_CART':
+        case "ADD_MORE":
+            state.cart[state.cart.findIndex(item => item.id === action.payload.id)].qty++
             return {
                 ...state,
-                cart: state.cart.filter(item => item.id !== actions.payload.id),
-                cart:[actions.payload, ...state.cart]
+                cart: [...state.cart]
             }
-        
-        case 'ADD_TRANSACTION':
+        case "DECREASE":
+            state.cart[state.cart.findIndex(item => item.id === action.payload.id)].qty--
             return {
                 ...state,
-                transactions:[actions.payload, ...state.transactions]
-            }
+                cart: [...state.cart]
+            }          
+
         default:
             return state;
     }
+    
 }

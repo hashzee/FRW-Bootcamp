@@ -43,26 +43,18 @@ const useStyles = makeStyles((theme) =>({
 
 function Product({info}) {
     const classes = useStyles();
-    const {add2Cart, cart} = useContext(GlobalContext);
+    const {add2Cart, addMore, cart} = useContext(GlobalContext);
 
 
-    function getCurrentItemQty(id)
+    function cartHasItem(id)
     {
-
+      console.log(cart);
+      let res = !!cart.find(items => items.id === id);
+      //alert(res);
+      return res;
     }
 
-
-    function addToCartClicked(e,id)
-    {
-        const newTransaction = {
-          id: id,
-          qty: 1
-        }
-        add2Cart(newTransaction); 
-        //console.log(cart);
-    }
- 
-  
+    //console.log(cart);
     return (
         <div className={styles.card}>
             <div className={styles.cardPrice}>Only ${info.price}</div>
@@ -71,7 +63,7 @@ function Product({info}) {
             </div>
             <div className={`${classes.avatarRoot} ${styles.cardActions}`}>
               <Avatar className={classes.black}>
-                <AddCartIcon onClick={(e) => {addToCartClicked(e, info.id)}} />
+                <AddCartIcon onClick={(e) => {(cartHasItem(info.id)?addMore({id:info.id}):add2Cart({id:info.id,qty:1}))}} />
               </Avatar>
               <Avatar className={classes.black} >
                 <ViewIcon />
